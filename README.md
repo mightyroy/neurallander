@@ -1,5 +1,7 @@
 # neurallander
 Deep reinforcement learning for openAI gym lunar lander environment
+Keras, tensorflow, openAI gym
 
-
-![alt text](https://giphy.com/embed/3oge7U23MJykgrQiaY)
+Deep Q learning + experience replay
+see it in action:
+https://giphy.com/gifs/3oge7U23MJykgrQiaY/
