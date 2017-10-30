@@ -10,7 +10,6 @@ import random
 import rewardcollector as rc
 import argparse
 import experienceReplay2
-from gym import wrappers
 
 #type 'python keraslander.py -render' to show animation
 parser = argparse.ArgumentParser()
@@ -40,7 +39,7 @@ def record_interval(n):
 	return n% RECORD_EPISODE_INTERVAL ==0
 
 if args.record:				
-	env = wrappers.Monitor(env, './tmp/keraslander2', video_callable=record_interval, force=True)
+	env = gym.wrappers.Monitor(env, './tmp/keraslander2', video_callable=record_interval, force=True)
 
 def create_model():
 	model = Sequential()
